@@ -13,6 +13,11 @@ class SFOParser {
     Dictionary<string, SFOPair> pairs_dic; // 拿取好用
     string filePath;
     public SFOParser(string filePath) {
+        FileAttributes attr = File.GetAttributes(filePath);
+
+        //detect whether its a directory or file
+        if ((attr & FileAttributes.Directory) == FileAttributes.Directory)
+            throw new Exception("不是正確的SFO檔");
         this.filePath = filePath;
         BinaryReader bs = new BinaryReader(new FileStream(filePath, FileMode.Open));
         byte[] tmpbuffer = bs.ReadBytes(Marshal.SizeOf(typeof(PsfHdr)));

@@ -279,9 +279,13 @@ namespace kautismSFOEditor {
         }
 
         private void OpenFile(string filename) {
-            m_sfo = new SFOParser(filename);
-            readSFOToListView(m_sfo, listViewEx1);
-            儲存ToolStripMenuItem.Enabled = true;
+            try {
+                m_sfo = new SFOParser(filename);
+                readSFOToListView(m_sfo, listViewEx1);
+                儲存ToolStripMenuItem.Enabled = true;
+            } catch (Exception e) {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void sFO預設使用此軟體開啟ToolStripMenuItem_Click(object sender, EventArgs e) {
