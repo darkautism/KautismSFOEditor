@@ -48,13 +48,13 @@
             this.dTSDigitalSurroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lPCMToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lPCMToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sFO預設使用此軟體開啟ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.stringEditor = new System.Windows.Forms.TextBox();
             this.integerEditor = new System.Windows.Forms.NumericUpDown();
             this.listViewEx1 = new ListViewEx.ListViewEx();
             this.標籤 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.數值 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sFO預設使用此軟體開啟ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.integerEditor)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +89,7 @@
             // 開啟ToolStripMenuItem
             // 
             this.開啟ToolStripMenuItem.Name = "開啟ToolStripMenuItem";
-            this.開啟ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.開啟ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.開啟ToolStripMenuItem.Text = "開啟";
             this.開啟ToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             this.開啟ToolStripMenuItem.Click += new System.EventHandler(this.開啟ToolStripMenuItem_Click);
@@ -98,7 +98,7 @@
             // 
             this.儲存ToolStripMenuItem.Enabled = false;
             this.儲存ToolStripMenuItem.Name = "儲存ToolStripMenuItem";
-            this.儲存ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.儲存ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.儲存ToolStripMenuItem.Text = "儲存";
             this.儲存ToolStripMenuItem.Click += new System.EventHandler(this.儲存ToolStripMenuItem_Click);
             // 
@@ -112,7 +112,7 @@
             this.允許背景音樂ToolStripMenuItem});
             this.屬性ToolStripMenuItem.Enabled = false;
             this.屬性ToolStripMenuItem.Name = "屬性ToolStripMenuItem";
-            this.屬性ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.屬性ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.屬性ToolStripMenuItem.Text = "屬性";
             // 
             // 遙控遊玩設定ToolStripMenuItem
@@ -120,7 +120,7 @@
             this.遙控遊玩設定ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.遙控遊玩設定ToolStripMenuItem.Name = "遙控遊玩設定ToolStripMenuItem";
-            this.遙控遊玩設定ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.遙控遊玩設定ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.遙控遊玩設定ToolStripMenuItem.Text = "遙控遊玩設定";
             // 
             // toolStripComboBox1
@@ -131,25 +131,25 @@
             "AVC/AAC",
             "480p AVC"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 24);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             // 
             // moveToolStripMenuItem
             // 
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.moveToolStripMenuItem.Text = "Move";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // installPKGToolStripMenuItem
             // 
             this.installPKGToolStripMenuItem.CheckOnClick = true;
             this.installPKGToolStripMenuItem.Name = "installPKGToolStripMenuItem";
-            this.installPKGToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.installPKGToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.installPKGToolStripMenuItem.Text = "Install PKG";
             this.installPKGToolStripMenuItem.CheckedChanged += new System.EventHandler(this.installPKGToolStripMenuItem_CheckedChanged);
             // 
@@ -157,7 +157,7 @@
             // 
             this.允許背景音樂ToolStripMenuItem.CheckOnClick = true;
             this.允許背景音樂ToolStripMenuItem.Name = "允許背景音樂ToolStripMenuItem";
-            this.允許背景音樂ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.允許背景音樂ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.允許背景音樂ToolStripMenuItem.Text = "允許背景音樂";
             this.允許背景音樂ToolStripMenuItem.CheckedChanged += new System.EventHandler(this.允許背景音樂ToolStripMenuItem_CheckedChanged);
             // 
@@ -172,14 +172,14 @@
             this.pToolStripMenuItem1});
             this.解析度ToolStripMenuItem.Enabled = false;
             this.解析度ToolStripMenuItem.Name = "解析度ToolStripMenuItem";
-            this.解析度ToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.解析度ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.解析度ToolStripMenuItem.Text = "解析度";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.CheckOnClick = true;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(110, 22);
             this.toolStripMenuItem2.Tag = "";
             this.toolStripMenuItem2.Text = "480i";
             this.toolStripMenuItem2.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -188,7 +188,7 @@
             // 
             this.toolStripMenuItem3.CheckOnClick = true;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(110, 22);
             this.toolStripMenuItem3.Tag = "";
             this.toolStripMenuItem3.Text = "480p";
             this.toolStripMenuItem3.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -197,7 +197,7 @@
             // 
             this.toolStripMenuItem4.CheckOnClick = true;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(110, 22);
             this.toolStripMenuItem4.Tag = "";
             this.toolStripMenuItem4.Text = "576i";
             this.toolStripMenuItem4.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -206,7 +206,7 @@
             // 
             this.toolStripMenuItem5.CheckOnClick = true;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(110, 22);
             this.toolStripMenuItem5.Tag = "";
             this.toolStripMenuItem5.Text = "576p";
             this.toolStripMenuItem5.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -215,7 +215,7 @@
             // 
             this.pToolStripMenuItem.CheckOnClick = true;
             this.pToolStripMenuItem.Name = "pToolStripMenuItem";
-            this.pToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.pToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.pToolStripMenuItem.Tag = "";
             this.pToolStripMenuItem.Text = "720p";
             this.pToolStripMenuItem.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -224,7 +224,7 @@
             // 
             this.pToolStripMenuItem1.CheckOnClick = true;
             this.pToolStripMenuItem1.Name = "pToolStripMenuItem1";
-            this.pToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.pToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
             this.pToolStripMenuItem1.Tag = "";
             this.pToolStripMenuItem1.Text = "1080p";
             this.pToolStripMenuItem1.CheckedChanged += new System.EventHandler(this.RESOLUTIONMenuItem_CheckedChanged);
@@ -239,14 +239,14 @@
             this.lPCMToolStripMenuItem2});
             this.音效ToolStripMenuItem.Enabled = false;
             this.音效ToolStripMenuItem.Name = "音效ToolStripMenuItem";
-            this.音效ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.音效ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.音效ToolStripMenuItem.Text = "音效";
             // 
             // lPCMToolStripMenuItem
             // 
             this.lPCMToolStripMenuItem.CheckOnClick = true;
             this.lPCMToolStripMenuItem.Name = "lPCMToolStripMenuItem";
-            this.lPCMToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.lPCMToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.lPCMToolStripMenuItem.Text = "2 LPCM";
             this.lPCMToolStripMenuItem.CheckedChanged += new System.EventHandler(this.SOUNDFORMAT_MenuItem_CheckedChanged);
             // 
@@ -254,7 +254,7 @@
             // 
             this.dolbyDigitalToolStripMenuItem.CheckOnClick = true;
             this.dolbyDigitalToolStripMenuItem.Name = "dolbyDigitalToolStripMenuItem";
-            this.dolbyDigitalToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.dolbyDigitalToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.dolbyDigitalToolStripMenuItem.Text = "5.1 Dolby Digital";
             this.dolbyDigitalToolStripMenuItem.CheckedChanged += new System.EventHandler(this.SOUNDFORMAT_MenuItem_CheckedChanged);
             // 
@@ -262,7 +262,7 @@
             // 
             this.dTSDigitalSurroundToolStripMenuItem.CheckOnClick = true;
             this.dTSDigitalSurroundToolStripMenuItem.Name = "dTSDigitalSurroundToolStripMenuItem";
-            this.dTSDigitalSurroundToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.dTSDigitalSurroundToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.dTSDigitalSurroundToolStripMenuItem.Text = "DTS Digital Surround";
             this.dTSDigitalSurroundToolStripMenuItem.CheckedChanged += new System.EventHandler(this.SOUNDFORMAT_MenuItem_CheckedChanged);
             // 
@@ -270,7 +270,7 @@
             // 
             this.lPCMToolStripMenuItem1.CheckOnClick = true;
             this.lPCMToolStripMenuItem1.Name = "lPCMToolStripMenuItem1";
-            this.lPCMToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.lPCMToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
             this.lPCMToolStripMenuItem1.Text = "5.1 LPCM";
             this.lPCMToolStripMenuItem1.CheckedChanged += new System.EventHandler(this.SOUNDFORMAT_MenuItem_CheckedChanged);
             // 
@@ -278,9 +278,16 @@
             // 
             this.lPCMToolStripMenuItem2.CheckOnClick = true;
             this.lPCMToolStripMenuItem2.Name = "lPCMToolStripMenuItem2";
-            this.lPCMToolStripMenuItem2.Size = new System.Drawing.Size(194, 22);
+            this.lPCMToolStripMenuItem2.Size = new System.Drawing.Size(192, 22);
             this.lPCMToolStripMenuItem2.Text = "7.1 LPCM";
             this.lPCMToolStripMenuItem2.CheckedChanged += new System.EventHandler(this.SOUNDFORMAT_MenuItem_CheckedChanged);
+            // 
+            // sFO預設使用此軟體開啟ToolStripMenuItem
+            // 
+            this.sFO預設使用此軟體開啟ToolStripMenuItem.Name = "sFO預設使用此軟體開啟ToolStripMenuItem";
+            this.sFO預設使用此軟體開啟ToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.sFO預設使用此軟體開啟ToolStripMenuItem.Text = "SFO預設使用此軟體開啟";
+            this.sFO預設使用此軟體開啟ToolStripMenuItem.Click += new System.EventHandler(this.sFO預設使用此軟體開啟ToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -340,13 +347,6 @@
             // 
             this.數值.Text = "數值";
             this.數值.Width = 498;
-            // 
-            // sFO預設使用此軟體開啟ToolStripMenuItem
-            // 
-            this.sFO預設使用此軟體開啟ToolStripMenuItem.Name = "sFO預設使用此軟體開啟ToolStripMenuItem";
-            this.sFO預設使用此軟體開啟ToolStripMenuItem.Size = new System.Drawing.Size(151, 20);
-            this.sFO預設使用此軟體開啟ToolStripMenuItem.Text = "SFO預設使用此軟體開啟";
-            this.sFO預設使用此軟體開啟ToolStripMenuItem.Click += new System.EventHandler(this.sFO預設使用此軟體開啟ToolStripMenuItem_Click);
             // 
             // Form1
             // 

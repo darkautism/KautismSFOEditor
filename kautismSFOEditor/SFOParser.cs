@@ -6,6 +6,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 
 class SFOParser {
+    public enum SFOType: byte
+    {
+        Byte = 0,
+        String = 2,
+        Interge = 4
+    };
+
     PsfHdr psfHdr;
     PsfSec[] psfSec;
     Encoding encode = Encoding.UTF8;
@@ -29,7 +36,7 @@ class SFOParser {
             throw new Exception("不是正確的SFO檔");
         }
 
-        Console.Write("{0}個區塊", psfHdr.nsects);
+        Console.WriteLine("{0}個區塊", psfHdr.nsects);
         psfSec = new PsfSec[psfHdr.nsects];
         for (int i = 0; i < psfHdr.nsects; i++) {
             tmpbuffer = bs.ReadBytes(Marshal.SizeOf(typeof(PsfSec)));
@@ -49,6 +56,8 @@ class SFOParser {
             bs.BaseStream.Position = psfSec[i].data_off + psfHdr.data_ptr;
             tmpbuffer = bs.ReadBytes(psfSec[i].datafield_used);
             pairs[i].type = psfSec[i].data_type;
+            // Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
+            pairs_dic.Add(pairs[i].label, pairs[i]);
             switch (psfSec[i].data_type) {
                 case 0:
                     pairs[i].value = tmpbuffer;
@@ -62,8 +71,6 @@ class SFOParser {
                 default:
                     break;
             }
-
-            pairs_dic.Add(pairs[i].label, pairs[i]);
             Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
         }
 

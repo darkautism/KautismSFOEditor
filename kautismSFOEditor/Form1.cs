@@ -173,6 +173,9 @@ namespace kautismSFOEditor {
 
         private void 儲存ToolStripMenuItem_Click(object sender, EventArgs e) {
             foreach (ListViewItem lvi in listViewEx1.Items) {
+                if (m_sfo.getType((int)lvi.Tag) == (byte)SFOParser.SFOType.String && lvi.SubItems[1].Text[lvi.SubItems[1].Text.Length-1] != '\0' ) {
+                    lvi.SubItems[1].Text += '\0';
+                }
                 m_sfo.setValue((int)lvi.Tag, lvi.SubItems[1].Text);
             }
             m_sfo.saveSFO();
