@@ -71,13 +71,13 @@ class SFOParser {
                 default:
                     break;
             }
-            Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
+            // Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
         }
 
 
 
         bs.Close();
-        saveSFO();
+        // saveSFO();
         // Console.Read();
     }
 
