@@ -128,7 +128,7 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listViewEx1.Type" xml:space="preserve">
-    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.1.37986, Culture=neutral, PublicKeyToken=null</value>
+    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.1.42800, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lPCMToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -140,14 +140,17 @@
   <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
     <value>linkLabel1</value>
   </data>
+  <data name="&gt;&gt;遙控遊玩設定ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;解析度ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;stringEditor.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
+    <value>toolStripMenuItem4</value>
   </data>
   <data name="遙控遊玩設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 22</value>
@@ -179,9 +182,6 @@
   <data name="integerEditor.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
-    <value>toolStripMenuItem4</value>
-  </data>
   <data name="音效ToolStripMenuItem.Text" xml:space="preserve">
     <value>Audio</value>
   </data>
@@ -199,9 +199,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;開啟ToolStripMenuItem.Name" xml:space="preserve">
-    <value>開啟ToolStripMenuItem</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>kautismSFOEditor</value>
@@ -221,8 +218,8 @@
   <data name="toolStripComboBox1.Items2" xml:space="preserve">
     <value>AVC/AAC</value>
   </data>
-  <data name="&gt;&gt;dolbyDigitalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;moveToolStripMenuItem.Name" xml:space="preserve">
+    <value>moveToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;lPCMToolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2428,6 +2425,9 @@
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 22</value>
   </data>
@@ -2443,8 +2443,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
-  <data name="允許背景音樂ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Allow background audio</value>
+  <data name="&gt;&gt;dolbyDigitalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="integerEditor.Location" type="System.Drawing.Point, System.Drawing">
     <value>516, 27</value>
@@ -2467,8 +2467,8 @@
   <data name="moveToolStripMenuItem.Text" xml:space="preserve">
     <value>Move</value>
   </data>
-  <data name="moveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 22</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="linkLabel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -2536,6 +2536,9 @@
   </data>
   <data name="lPCMToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 22</value>
+  </data>
+  <data name="moveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
   </data>
   <data name="&gt;&gt;moveToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2627,11 +2630,11 @@
   <data name="&gt;&gt;pToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;moveToolStripMenuItem.Name" xml:space="preserve">
-    <value>moveToolStripMenuItem</value>
-  </data>
   <data name="listViewEx1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 24</value>
+  </data>
+  <data name="允許背景音樂ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Allow background audio</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 12</value>
@@ -2651,8 +2654,8 @@
   <data name="stringEditor.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
   </data>
   <data name="installPKGToolStripMenuItem.Text" xml:space="preserve">
     <value>Install PKG</value>
@@ -2672,9 +2675,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>718, 419</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
   <data name="listViewEx1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2684,8 +2684,8 @@
   <data name="&gt;&gt;lPCMToolStripMenuItem2.Name" xml:space="preserve">
     <value>lPCMToolStripMenuItem2</value>
   </data>
-  <data name="&gt;&gt;遙控遊玩設定ToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;開啟ToolStripMenuItem.Name" xml:space="preserve">
+    <value>開啟ToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;pToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

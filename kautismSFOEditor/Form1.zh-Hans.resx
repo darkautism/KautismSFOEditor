@@ -126,31 +126,31 @@
     <value>43, 20</value>
   </data>
   <data name="開啟ToolStripMenuItem.Text" xml:space="preserve">
-    <value>开启</value>
+    <value>打开</value>
   </data>
   <data name="儲存ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
   <data name="儲存ToolStripMenuItem.Text" xml:space="preserve">
-    <value>存档</value>
+    <value>保存</value>
   </data>
   <data name="遙控遊玩設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="遙控遊玩設定ToolStripMenuItem.Text" xml:space="preserve">
     <value>遥控游玩</value>
   </data>
   <data name="moveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>143, 6</value>
   </data>
   <data name="installPKGToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="允許背景音樂ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>146, 22</value>
   </data>
   <data name="允許背景音樂ToolStripMenuItem.Text" xml:space="preserve">
     <value>允许背景音乐</value>
@@ -161,29 +161,11 @@
   <data name="屬性ToolStripMenuItem.Text" xml:space="preserve">
     <value>属性</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="pToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="pToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
   <data name="解析度ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
   </data>
   <data name="解析度ToolStripMenuItem.Text" xml:space="preserve">
-    <value>解析度</value>
+    <value>分辨率</value>
   </data>
   <data name="音效ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -192,16 +174,16 @@
     <value>音效</value>
   </data>
   <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 20</value>
+    <value>126, 20</value>
   </data>
   <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Text" xml:space="preserve">
-    <value>设为预设SFO软体</value>
+    <value>设置为SFO默认软件</value>
   </data>
   <data name="tab_Tag.Text" xml:space="preserve">
     <value>标签</value>
   </data>
   <data name="tab_Value.Text" xml:space="preserve">
-    <value>值</value>
+    <value>数值</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
