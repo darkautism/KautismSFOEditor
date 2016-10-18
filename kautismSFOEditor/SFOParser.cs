@@ -87,7 +87,38 @@ class SFOParser {
     public void saveSFO() {
         BinaryWriter bw = new BinaryWriter(new FileStream(filePath, FileMode.Open));
         byte[] tmpBuffer;
+        GCHandle handle;
+        // write psfHdr, and get new data_ptr offset
+        bw.BaseStream.Position = Marshal.SizeOf(typeof(PsfHdr));
+        for (int i = 0; i < psfHdr.nsects; i++) {
+            tmpBuffer = new byte[Marshal.SizeOf(typeof(PsfSec))];
+            handle = GCHandle.Alloc(tmpBuffer, GCHandleType.Pinned);
+            Marshal.StructureToPtr(psfSec[i], handle.AddrOfPinnedObject(), false);
+            handle.Free();
+            bw.Write(tmpBuffer);
+        }
+        bw.Close();
+        psfHdr.label_ptr = (int)bw.BaseStream.Position;
 
+        // write label Field
+
+        for (int i = 0; i < psfHdr.nsects; i++) {
+            psfSec[i].label_off = (short) (bw.BaseStream.Position - psfHdr.label_ptr);
+            tmpBuffer = new byte[Marshal.SizeOf(typeof(PsfSec))];
+            handle = GCHandle.Alloc(tmpBuffer, GCHandleType.Pinned);
+            Marshal.StructureToPtr(psfSec[i], handle.AddrOfPinnedObject(), false);
+            handle.Free();
+            bw.Write(tmpBuffer);
+        }
+
+        // aline to 16byte
+        int tmp = (int)(bw.BaseStream.Position % 16);
+        if (tmp != 0) {
+            psfHdr.data_ptr = (int)bw.BaseStream.Position + 16 - tmp;
+        }
+        psfHdr.data_ptr = (int)bw.BaseStream.Position;
+
+        // write data set 
         for (int i = 0; i < psfHdr.nsects; i++) {
             bw.BaseStream.Position = psfSec[i].data_off + psfHdr.data_ptr;
             switch (psfSec[i].data_type) {
@@ -112,6 +143,7 @@ class SFOParser {
                 psfSec[i].datafield_used = psfSec[i].datafield_size;
                 bw.Write(tmpBuffer, 0, psfSec[i].datafield_size);
             }
+
         }
 
         bw.BaseStream.Position = 0;
@@ -121,13 +153,6 @@ class SFOParser {
         handle.Free();
         bw.Write(tmpBuffer);
 
-        for (int i = 0; i < psfHdr.nsects; i++) {
-            tmpBuffer = new byte[Marshal.SizeOf(typeof(PsfSec))];
-            handle = GCHandle.Alloc(tmpBuffer, GCHandleType.Pinned);
-            Marshal.StructureToPtr(psfSec[i], handle.AddrOfPinnedObject(), false);
-            handle.Free();
-            bw.Write(tmpBuffer);
-        }
         bw.Close();
     }
 
