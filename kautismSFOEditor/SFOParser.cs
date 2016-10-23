@@ -35,8 +35,9 @@ class SFOParser {
         if (!Enumerable.SequenceEqual( psfHdr.psf, new char[] {'\0','P', 'S', 'F'})) {
             throw new Exception("不是正確的SFO檔");
         }
-
+#if DEBUG
         Console.WriteLine("{0}個區塊", psfHdr.nsects);
+#endif
         psfSec = new PsfSec[psfHdr.nsects];
         for (int i = 0; i < psfHdr.nsects; i++) {
             tmpbuffer = bs.ReadBytes(Marshal.SizeOf(typeof(PsfSec)));
@@ -56,7 +57,6 @@ class SFOParser {
             bs.BaseStream.Position = psfSec[i].data_off + psfHdr.data_ptr;
             tmpbuffer = bs.ReadBytes(psfSec[i].datafield_used);
             pairs[i].type = psfSec[i].data_type;
-            // Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
             pairs_dic.Add(pairs[i].label, pairs[i]);
             switch (psfSec[i].data_type) {
                 case 0:
@@ -71,14 +71,14 @@ class SFOParser {
                 default:
                     break;
             }
-            // Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
+#if DEBUG
+            Console.WriteLine("Label:{0}, Type:{1:X}, Value:{2}", pairs[i].label, pairs[i].type, pairs[i].value);
+#endif
         }
 
 
 
         bs.Close();
-        // saveSFO();
-        // Console.Read();
     }
 
     /// <summary>
@@ -124,8 +124,6 @@ class SFOParser {
                     break;
             }
             psfSec[i].datafield_used = tmpBuffer.Length;
-
-            Console.WriteLine("Yo {0}", tmpBuffer.Length);
 
             if (psfSec[i].datafield_size < psfSec[i].datafield_used) { // 對齊4byte
                 tmp = (int)(psfSec[i].datafield_used % 4);
@@ -211,6 +209,8 @@ class SFOParser {
                 pairs[index].value = encode.GetBytes(value);
                 break;
             case 2:
+                if (value[value.Length - 1] != 0)
+                    value += '\0';
                 pairs[index].value = value;
                 break;
             case 4:
@@ -221,6 +221,10 @@ class SFOParser {
                 // unknow type and do nothing
                 break;
         }
+    }
+
+    public void setLabel(int index, string value) {
+        pairs[index].label = value;
     }
 
 

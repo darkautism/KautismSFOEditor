@@ -178,6 +178,7 @@ namespace kautismSFOEditor {
                 if (m_sfo.getType((int)lvi.Tag) == (byte)SFOParser.SFOType.String && lvi.SubItems[1].Text[lvi.SubItems[1].Text.Length-1] != '\0' ) {
                     lvi.SubItems[1].Text += '\0';
                 }
+                m_sfo.setLabel((int)lvi.Tag, lvi.SubItems[0].Text);
                 m_sfo.setValue((int)lvi.Tag, lvi.SubItems[1].Text);
             }
             m_sfo.saveSFO();
@@ -202,6 +203,8 @@ namespace kautismSFOEditor {
                         listViewEx1.StartEditing(stringEditor, e.Item, e.SubItem);
                         break;
                 }
+            } else if (e.SubItem == 0) {
+                listViewEx1.StartEditing(stringEditor, e.Item, e.SubItem);
             }
         }
 
@@ -300,6 +303,7 @@ namespace kautismSFOEditor {
             Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", Extension);
             Registry.ClassesRoot.CreateSubKey(Extension + "\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
             Registry.ClassesRoot.CreateSubKey(Extension + "\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
+            
             MessageBox.Show("設定完成");
         }
 
