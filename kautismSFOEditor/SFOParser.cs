@@ -17,7 +17,6 @@ class SFOParser {
     PsfSec[] psfSec;
     Encoding encode = Encoding.UTF8;
     SFOPair[] pairs; // 寫入要用
-    Dictionary<string, SFOPair> pairs_dic; // 拿取好用
     string filePath;
     public SFOParser(string filePath) {
         FileAttributes attr = File.GetAttributes(filePath);
@@ -45,8 +44,7 @@ class SFOParser {
             psfSec[i] = (PsfSec)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(PsfSec));
             handle.Free();
         }
-
-        pairs_dic = new Dictionary<string, SFOPair>();
+        
         pairs = new SFOPair[psfHdr.nsects];
         for (int i = 0; i < psfHdr.nsects; i++) {
             bs.BaseStream.Position = psfSec[i].label_off + psfHdr.label_ptr;
@@ -57,7 +55,6 @@ class SFOParser {
             bs.BaseStream.Position = psfSec[i].data_off + psfHdr.data_ptr;
             tmpbuffer = bs.ReadBytes(psfSec[i].datafield_used);
             pairs[i].type = psfSec[i].data_type;
-            pairs_dic.Add(pairs[i].label, pairs[i]);
             switch (psfSec[i].data_type) {
                 case 0:
                     pairs[i].value = tmpbuffer;
@@ -170,7 +167,12 @@ class SFOParser {
     /// <param name="key">key (label)</param>
     /// <returns></returns>
     public object getValue(string key) {
-        return pairs_dic[key].value;
+        for (int i = 0;  i < pairs.Length; i++) {
+            if (pairs[i].label == key) {
+                return pairs[i].value;
+            }
+        }
+        return null;
     }
 
     /// <summary>
