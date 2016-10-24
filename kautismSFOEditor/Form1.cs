@@ -297,13 +297,17 @@ namespace kautismSFOEditor {
         }
 
         private void sFO預設使用此軟體開啟ToolStripMenuItem_Click(object sender, EventArgs e) {
-            String Extension = ".SFO";//副檔名名稱
-            String Extension_Icopath = @"\ico\sfo.ico";//ICO的路徑
-            RegistryKey key = Registry.ClassesRoot.OpenSubKey(Extension);
-            Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", Extension);
-            Registry.ClassesRoot.CreateSubKey(Extension + "\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
-            Registry.ClassesRoot.CreateSubKey(Extension + "\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
-            
+            String Extension = ".sfo";//副檔名名稱
+            String Extension_Icopath = @"\sfo.ico";//ICO的路徑
+            //RegistryKey key = Registry.ClassesRoot.OpenSubKey(Extension);
+            //Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", Extension);
+            //Registry.ClassesRoot.CreateSubKey(Extension + "\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
+            //Registry.ClassesRoot.CreateSubKey(Extension + "\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
+            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor").SetValue("", "SFO file editor");
+            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
+            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
+
+            Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", "KautismSFOEditor");
             MessageBox.Show("設定完成");
         }
 
