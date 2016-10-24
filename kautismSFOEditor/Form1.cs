@@ -311,5 +311,8 @@ namespace kautismSFOEditor {
             MessageBox.Show("設定完成");
         }
 
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            System.Diagnostics.Process.Start(linkLabel2.Text.ToString());
+        }
     }
 }

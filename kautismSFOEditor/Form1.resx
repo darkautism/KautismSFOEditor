@@ -148,11 +148,35 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>718, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="開啟ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 20</value>
   </data>
@@ -171,6 +195,21 @@
   <data name="儲存ToolStripMenuItem.Text" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="屬性ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="屬性ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="屬性ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="遙控遊玩設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="遙控遊玩設定ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remote play</value>
+  </data>
   <data name="toolStripComboBox1.Items" xml:space="preserve">
     <value>不支持</value>
   </data>
@@ -185,12 +224,6 @@
   </data>
   <data name="toolStripComboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 23</value>
-  </data>
-  <data name="遙控遊玩設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 22</value>
-  </data>
-  <data name="遙控遊玩設定ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remote play</value>
   </data>
   <data name="moveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 22</value>
@@ -213,14 +246,14 @@
   <data name="允許背景音樂ToolStripMenuItem.Text" xml:space="preserve">
     <value>Allow background audio</value>
   </data>
-  <data name="屬性ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+  <data name="解析度ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="屬性ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
+  <data name="解析度ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
   </data>
-  <data name="屬性ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Attribute</value>
+  <data name="解析度ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Resolution</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 22</value>
@@ -258,14 +291,14 @@
   <data name="pToolStripMenuItem1.Text" xml:space="preserve">
     <value>1080p</value>
   </data>
-  <data name="解析度ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+  <data name="音效ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="解析度ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
+  <data name="音效ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
-  <data name="解析度ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Resolution</value>
+  <data name="音效ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Audio</value>
   </data>
   <data name="lPCMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 22</value>
@@ -297,44 +330,11 @@
   <data name="lPCMToolStripMenuItem2.Text" xml:space="preserve">
     <value>7.1 LPCM</value>
   </data>
-  <data name="音效ToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="音效ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
-  </data>
-  <data name="音效ToolStripMenuItem.Text" xml:space="preserve">
-    <value>Audio</value>
-  </data>
   <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 20</value>
   </data>
   <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Text" xml:space="preserve">
     <value>Set as default SFO program</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>718, 24</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>136, 17</value>
@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;stringEditor.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="integerEditor.Location" type="System.Drawing.Point, System.Drawing">
     <value>516, 27</value>
@@ -388,19 +388,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;integerEditor.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tab_Tag.Text" xml:space="preserve">
-    <value>Tag</value>
-  </data>
-  <data name="tab_Tag.Width" type="System.Int32, mscorlib">
-    <value>161</value>
-  </data>
-  <data name="tab_Value.Text" xml:space="preserve">
-    <value>Value</value>
-  </data>
-  <data name="tab_Value.Width" type="System.Int32, mscorlib">
-    <value>498</value>
+    <value>1</value>
   </data>
   <data name="listViewEx1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -418,13 +406,52 @@
     <value>listViewEx1</value>
   </data>
   <data name="&gt;&gt;listViewEx1.Type" xml:space="preserve">
-    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.3.42748, Culture=neutral, PublicKeyToken=null</value>
+    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.4.34946, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;listViewEx1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listViewEx1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="tab_Tag.Text" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="tab_Tag.Width" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="tab_Value.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="tab_Value.Width" type="System.Int32, mscorlib">
+    <value>498</value>
+  </data>
+  <data name="linkLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 407</value>
+  </data>
+  <data name="linkLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 12</value>
+  </data>
+  <data name="linkLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="linkLabel2.Text" xml:space="preserve">
+    <value>https://github.com/darkautism/KautismSFOEditor</value>
+  </data>
+  <data name="&gt;&gt;linkLabel2.Name" xml:space="preserve">
+    <value>linkLabel2</value>
+  </data>
+  <data name="&gt;&gt;linkLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;linkLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

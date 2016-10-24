@@ -55,6 +55,7 @@
             this.listViewEx1 = new ListViewEx.ListViewEx();
             this.tab_Tag = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tab_Value = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.integerEditor)).BeginInit();
             this.SuspendLayout();
@@ -303,11 +304,19 @@
             // 
             resources.ApplyResources(this.tab_Value, "tab_Value");
             // 
+            // linkLabel2
+            // 
+            resources.ApplyResources(this.linkLabel2, "linkLabel2");
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.integerEditor);
             this.Controls.Add(this.stringEditor);
             this.Controls.Add(this.listViewEx1);
@@ -358,6 +367,7 @@
         private System.Windows.Forms.ToolStripMenuItem lPCMToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem lPCMToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem sFO預設使用此軟體開啟ToolStripMenuItem;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
 
