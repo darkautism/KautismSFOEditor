@@ -66,7 +66,7 @@ namespace kautismSFOEditor {
             System.Diagnostics.Process.Start(linkLabel1.Text.ToString());
         }
 
-        private void 開啟ToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 OpenFile(openFileDialog1.FileName);
             }
@@ -74,9 +74,9 @@ namespace kautismSFOEditor {
 
         private void readSFOToListView(SFOParser sfo, ListView lv) {
             lv.Items.Clear();
-            屬性ToolStripMenuItem.Enabled = false;
-            解析度ToolStripMenuItem.Enabled = false;
-            音效ToolStripMenuItem.Enabled = false;
+            AttributeToolStripMenuItem.Enabled = false;
+            resolutionToolStripMenuItem.Enabled = false;
+            audioToolStripMenuItem.Enabled = false;
             m_attribute_lvi = null;
             m_sound_formate_lvi = null;
             m_resolutin_lvi = null;
@@ -102,7 +102,7 @@ namespace kautismSFOEditor {
 
                 if (sfo.getKey(i).Equals("ATTRIBUTE")) {
                     m_attribute_lvi = lvi;
-                    屬性ToolStripMenuItem.Enabled = true;
+                    AttributeToolStripMenuItem.Enabled = true;
                     int attribute = (int)sfo.getValue(i);
                     if ((attribute & PSP3) == PSP3) {
                         toolStripComboBox1.SelectedIndex = 3;
@@ -117,13 +117,13 @@ namespace kautismSFOEditor {
 
                 if (sfo.getKey(i).Equals("RESOLUTION")) {
                     m_resolutin_lvi = lvi;
-                    解析度ToolStripMenuItem.Enabled = true;
+                    resolutionToolStripMenuItem.Enabled = true;
                     int res = (int)sfo.getValue(i);
                     SetResolution(res);
                 }
                 if (sfo.getKey(i).Equals("SOUND_FORMAT")) {
                     m_sound_formate_lvi = lvi;
-                    音效ToolStripMenuItem.Enabled = true;
+                    audioToolStripMenuItem.Enabled = true;
                     int snd = (int)sfo.getValue(i);
                     SetSountFormat(snd);
                 }
@@ -173,7 +173,7 @@ namespace kautismSFOEditor {
             dTSDigitalSurroundToolStripMenuItem.CheckedChanged += SOUNDFORMAT_MenuItem_CheckedChanged;
         }
 
-        private void 儲存ToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e) {
             foreach (ListViewItem lvi in listViewEx1.Items) {
                 if (m_sfo.getType((int)lvi.Tag) == (byte)SFOParser.SFOType.String && lvi.SubItems[1].Text[lvi.SubItems[1].Text.Length-1] != '\0' ) {
                     lvi.SubItems[1].Text += '\0';
@@ -182,7 +182,7 @@ namespace kautismSFOEditor {
                 m_sfo.setValue((int)lvi.Tag, lvi.SubItems[1].Text);
             }
             m_sfo.saveSFO();
-            MessageBox.Show("存檔完成");
+            MessageBox.Show(Resources.strings.File_saved);
         }
 
 
@@ -240,11 +240,11 @@ namespace kautismSFOEditor {
             }
         }
 
-        private void 允許背景音樂ToolStripMenuItem_CheckedChanged(object sender, EventArgs e) {
+        private void allowBGMToolStripMenuItem_CheckedChanged(object sender, EventArgs e) {
             if (m_attribute_lvi != null) {
                 int attr = int.Parse(m_attribute_lvi.SubItems[1].Text);
                 attr -= (attr & BACKGROUND_MUSIC_IN_GAME);
-                if (允許背景音樂ToolStripMenuItem.Checked) {
+                if (allowBGMToolStripMenuItem.Checked) {
                     attr |= BACKGROUND_MUSIC_IN_GAME;
                 }
                 m_attribute_lvi.SubItems[1].Text = attr + "";
@@ -290,25 +290,24 @@ namespace kautismSFOEditor {
             try {
                 m_sfo = new SFOParser(filename);
                 readSFOToListView(m_sfo, listViewEx1);
-                儲存ToolStripMenuItem.Enabled = true;
+                saveToolStripMenuItem.Enabled = true;
             } catch (Exception e) {
                 MessageBox.Show(e.Message);
             }
         }
 
-        private void sFO預設使用此軟體開啟ToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void defaultSFOToolStripMenuItem_Click(object sender, EventArgs e) {
             String Extension = ".sfo";//副檔名名稱
             String Extension_Icopath = @"\sfo.ico";//ICO的路徑
-            //RegistryKey key = Registry.ClassesRoot.OpenSubKey(Extension);
-            //Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", Extension);
-            //Registry.ClassesRoot.CreateSubKey(Extension + "\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
-            //Registry.ClassesRoot.CreateSubKey(Extension + "\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
-            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor").SetValue("", "SFO file editor");
-            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
-            Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
-
-            Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", "KautismSFOEditor");
-            MessageBox.Show("設定完成");
+            try {
+                Registry.ClassesRoot.CreateSubKey("KautismSFOEditor").SetValue("", "SFO file editor");
+                Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\DefaultIcon").SetValue("", System.Windows.Forms.Application.StartupPath + Extension_Icopath);
+                Registry.ClassesRoot.CreateSubKey("KautismSFOEditor\\shell\\open\\command").SetValue("", Application.ExecutablePath + " %1", RegistryValueKind.ExpandString);
+                Registry.ClassesRoot.CreateSubKey(Extension).SetValue("", "KautismSFOEditor");
+                MessageBox.Show(Resources.strings.Setting_Finished);
+            } catch (UnauthorizedAccessException uae) {
+                MessageBox.Show(Resources.strings.NeedAdministratorPermission);
+            }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {

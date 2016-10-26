@@ -122,22 +122,22 @@
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="開啟ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
-  <data name="開啟ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="openToolStripMenuItem.Text" xml:space="preserve">
     <value>打开</value>
   </data>
-  <data name="儲存ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
-  <data name="儲存ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
     <value>保存</value>
   </data>
-  <data name="遙控遊玩設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="remotePlayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
   </data>
-  <data name="遙控遊玩設定ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="remotePlayToolStripMenuItem.Text" xml:space="preserve">
     <value>遥控游玩</value>
   </data>
   <data name="moveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -149,34 +149,28 @@
   <data name="installPKGToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
   </data>
-  <data name="允許背景音樂ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="allowBGMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 22</value>
   </data>
-  <data name="允許背景音樂ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="allowBGMToolStripMenuItem.Text" xml:space="preserve">
     <value>允许背景音乐</value>
   </data>
-  <data name="屬性ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AttributeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
-  <data name="屬性ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="AttributeToolStripMenuItem.Text" xml:space="preserve">
     <value>属性</value>
   </data>
-  <data name="解析度ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
-  </data>
-  <data name="解析度ToolStripMenuItem.Text" xml:space="preserve">
-    <value>分辨率</value>
-  </data>
-  <data name="音效ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="audioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
   </data>
-  <data name="音效ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="audioToolStripMenuItem.Text" xml:space="preserve">
     <value>音效</value>
   </data>
-  <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="defaultSFOToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 20</value>
   </data>
-  <data name="sFO預設使用此軟體開啟ToolStripMenuItem.Text" xml:space="preserve">
+  <data name="defaultSFOToolStripMenuItem.Text" xml:space="preserve">
     <value>设置为SFO默认软件</value>
   </data>
   <data name="tab_Tag.Text" xml:space="preserve">
