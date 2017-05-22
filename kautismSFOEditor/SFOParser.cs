@@ -13,6 +13,15 @@ class SFOParser {
         Interge = 4
     };
 
+    private int alignment(int num, int aliment) {
+        int tmp = (int)(num % aliment);
+        if (tmp != 0) {
+            return num + 4 - tmp;
+        } else {
+            return num;
+        }
+    }
+
     PsfHdr psfHdr;
     PsfSec[] psfSec;
     Encoding encode = Encoding.UTF8;
@@ -90,18 +99,18 @@ class SFOParser {
         bw.BaseStream.Position = psfHdr.label_ptr;
         for (int i = 0; i < psfHdr.nsects; i++) {
             psfSec[i].label_off = (short)(bw.BaseStream.Position - psfHdr.label_ptr);
-            char []charBuffer = new char[pairs[i].label.Length+1];
+            int sz_label = pairs[i].label.Length + 1;
+            //int sz_label = aliment(pairs[i].label.Length + 1, 4);
+            char []charBuffer = new char[sz_label];
             Array.Copy(pairs[i].label.ToCharArray(), charBuffer, pairs[i].label.Length);
             bw.Write(charBuffer);
         }
 
-        // aline to 16byte
-        int tmp = (int)(bw.BaseStream.Position % 16);
-        if (tmp != 0) {
-            psfHdr.data_ptr = (int)bw.BaseStream.Position + 16 - tmp;
+        // aline to 4byte
+        psfHdr.data_ptr = alignment((int)bw.BaseStream.Position, 4);
+        while (psfHdr.data_ptr != bw.BaseStream.Position) {
+            bw.Write('\0');
         }
-        psfHdr.data_ptr = (int)bw.BaseStream.Position;
-
         // write data set 
         for (int i = 0, current_offset = 0; i < psfHdr.nsects; i++) {
             psfSec[i].data_off = current_offset;
@@ -121,14 +130,10 @@ class SFOParser {
                     break;
             }
             psfSec[i].datafield_used = tmpBuffer.Length;
-
-            if (psfSec[i].datafield_size < psfSec[i].datafield_used) { // 對齊4byte
-                tmp = (int)(psfSec[i].datafield_used % 4);
-                if (tmp != 0) {
-                    psfSec[i].datafield_size = (int)psfSec[i].datafield_used + 4 - tmp;
-                } else {
-                    psfSec[i].datafield_size = psfSec[i].datafield_used;
-                }
+            Console.WriteLine(psfSec[i].datafield_used + " " + encode.GetString(tmpBuffer)  + "\n");
+            if (psfSec[i].datafield_size < psfSec[i].datafield_used) {
+                // 對齊4byte
+                psfSec[i].datafield_size = alignment((int)psfSec[i].datafield_used, 4);
             }
 
             char []clear_buf = new char[psfSec[i].datafield_size];
@@ -226,6 +231,8 @@ class SFOParser {
     }
 
     public void setLabel(int index, string value) {
+        //if (value[value.Length - 1] != 0)
+        //    value += '\0';
         pairs[index].label = value;
     }
 

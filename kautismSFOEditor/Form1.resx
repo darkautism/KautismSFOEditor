@@ -117,11 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 407</value>
+  </data>
   <data name="&gt;&gt;installPKGToolStripMenuItem.Name" xml:space="preserve">
     <value>installPKGToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;listViewEx1.Type" xml:space="preserve">
-    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.4.37147, Culture=neutral, PublicKeyToken=null</value>
+    <value>ListViewEx.ListViewEx, kautismSFOEditor, Version=1.1.4.39758, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="linkLabel2.AutoSize" type="System.Boolean, mscorlib">
@@ -145,10 +149,9 @@
   <data name="&gt;&gt;defaultSFOToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
+    <value>toolStripMenuItem4</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 12</value>
   </data>
@@ -164,6 +167,9 @@
   <data name="&gt;&gt;toolStripComboBox1.Name" xml:space="preserve">
     <value>toolStripComboBox1</value>
   </data>
+  <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pToolStripMenuItem.Text" xml:space="preserve">
     <value>720p</value>
   </data>
@@ -175,9 +181,6 @@
   </data>
   <data name="integerEditor.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem4.Name" xml:space="preserve">
-    <value>toolStripMenuItem4</value>
   </data>
   <data name="tab_Value.Text" xml:space="preserve">
     <value>Value</value>
@@ -195,8 +198,8 @@
   <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>kautismSFOEditor</value>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;linkLabel2.Name" xml:space="preserve">
     <value>linkLabel2</value>
@@ -210,17 +213,14 @@
   <data name="dolbyDigitalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 22</value>
   </data>
-  <data name="lPCMToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
   <data name="audioToolStripMenuItem.Text" xml:space="preserve">
     <value>Audio</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="openFileDialog1.Filter" xml:space="preserve">
-    <value>SFO檔案|*.sfo|所有檔案|*.*</value>
+  <data name="&gt;&gt;stringEditor.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 20</value>
@@ -2426,17 +2426,17 @@
   <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="tab_Value.Width" type="System.Int32, mscorlib">
-    <value>498</value>
-  </data>
   <data name="lPCMToolStripMenuItem1.Text" xml:space="preserve">
     <value>5.1 LPCM</value>
   </data>
   <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 20</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lPCMToolStripMenuItem.Name" xml:space="preserve">
+    <value>lPCMToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 22</value>
@@ -2444,8 +2444,8 @@
   <data name="&gt;&gt;integerEditor.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="defaultSFOToolStripMenuItem.Text" xml:space="preserve">
-    <value>Set as default SFO program</value>
+  <data name="&gt;&gt;linkLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;listViewEx1.Name" xml:space="preserve">
     <value>listViewEx1</value>
@@ -2470,6 +2470,9 @@
   </data>
   <data name="remotePlayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 22</value>
+  </data>
+  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="AttributeToolStripMenuItem.Text" xml:space="preserve">
     <value>Attribute</value>
@@ -2504,20 +2507,14 @@
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;stringEditor.Name" xml:space="preserve">
-    <value>stringEditor</value>
-  </data>
   <data name="&gt;&gt;stringEditor.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="dolbyDigitalToolStripMenuItem.Text" xml:space="preserve">
-    <value>5.1 Dolby Digital</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
     <value>toolStripMenuItem5</value>
   </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 407</value>
+  <data name="&gt;&gt;stringEditor.Name" xml:space="preserve">
+    <value>stringEditor</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2537,8 +2534,11 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>SFO檔案|*.sfo|所有檔案|*.*</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>kautismSFOEditor</value>
   </data>
   <data name="lPCMToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 22</value>
@@ -2578,6 +2578,9 @@
   </data>
   <data name="linkLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 12</value>
+  </data>
+  <data name="dolbyDigitalToolStripMenuItem.Text" xml:space="preserve">
+    <value>5.1 Dolby Digital</value>
   </data>
   <data name="&gt;&gt;tab_Tag.Name" xml:space="preserve">
     <value>tab_Tag</value>
@@ -2657,9 +2660,6 @@
   <data name="stringEditor.Location" type="System.Drawing.Point, System.Drawing">
     <value>399, 27</value>
   </data>
-  <data name="&gt;&gt;stringEditor.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="stringEditor.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -2675,8 +2675,8 @@
   <data name="&gt;&gt;listViewEx1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;saveToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tab_Value.Width" type="System.Int32, mscorlib">
+    <value>498</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>718, 419</value>
@@ -2717,8 +2717,8 @@
   <data name="&gt;&gt;audioToolStripMenuItem.Name" xml:space="preserve">
     <value>audioToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;lPCMToolStripMenuItem.Name" xml:space="preserve">
-    <value>lPCMToolStripMenuItem</value>
+  <data name="lPCMToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
   </data>
   <data name="&gt;&gt;integerEditor.Name" xml:space="preserve">
     <value>integerEditor</value>
@@ -2738,8 +2738,8 @@
   <data name="listViewEx1.Size" type="System.Drawing.Size, System.Drawing">
     <value>718, 383</value>
   </data>
-  <data name="&gt;&gt;linkLabel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="defaultSFOToolStripMenuItem.Text" xml:space="preserve">
+    <value>Set as default SFO program</value>
   </data>
   <data name="&gt;&gt;defaultSFOToolStripMenuItem.Name" xml:space="preserve">
     <value>defaultSFOToolStripMenuItem</value>
